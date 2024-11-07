@@ -1,0 +1,22 @@
+# fivem artifacts
+/artifact
+/artifacts
+/alpine
+/server
+
+# cache
+/cache
+
+# start file
+start.bat
+launch.bat
+server.bat
+
+# Intellij Idea files
+/.idea
+
+# fiveguard anticheat files
+/db
+
+# npwd logs
+sv_npwd.log
