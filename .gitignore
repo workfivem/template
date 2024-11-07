@@ -2,8 +2,8 @@
 /cache
 
 # config files with sensitive information
-/config/keys.cfg
-/config/database.cfg
+keys.cfg
+database.cfg
 
 # Intellij Idea files
 /.idea
