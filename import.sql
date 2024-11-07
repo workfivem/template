@@ -136,12 +136,6 @@ ALTER TABLE `addon_inventory_items`
   ADD KEY `index_addon_inventory_items_inventory_name_name_owner` (`inventory_name`,`name`,`owner`),
   ADD KEY `index_addon_inventory_inventory_name` (`inventory_name`);
 
-ALTER TABLE `billing`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `cardealer_vehicles`
-  ADD PRIMARY KEY (`id`);
-
 ALTER TABLE `datastore`
   ADD PRIMARY KEY (`name`);
 
@@ -159,13 +153,7 @@ ALTER TABLE `jobs`
 ALTER TABLE `job_grades`
   ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `licenses`
-  ADD PRIMARY KEY (`type`);
-
 ALTER TABLE `owned_vehicles`
-  ADD PRIMARY KEY (`plate`);
-
-ALTER TABLE `rented_vehicles`
   ADD PRIMARY KEY (`plate`);
 
 ALTER TABLE `society_moneywash`
@@ -175,9 +163,6 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`identifier`),
   ADD UNIQUE KEY `id` (`id`);
 
-ALTER TABLE `user_licenses`
-  ADD PRIMARY KEY (`id`);
-
 --
 -- AUTO INCREMENTS
 --
@@ -185,12 +170,6 @@ ALTER TABLE `addon_account_data`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 ALTER TABLE `addon_inventory_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
-ALTER TABLE `billing`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
-ALTER TABLE `cardealer_vehicles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `datastore_data`
@@ -204,6 +183,3 @@ ALTER TABLE `society_moneywash`
 
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
-ALTER TABLE `user_licenses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
