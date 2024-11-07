@@ -1,1 +1,1 @@
-.\artifacts\FXServer.exe +exec server.cfg
+.\artifacts\FXServer.exe +exec config/server.cfg
